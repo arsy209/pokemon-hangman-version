@@ -10,9 +10,10 @@ class Word
   end
 
   def found?
-    @letters.all? do |h| h.[:hidden] == false
-    end
-  end
+		@letters.all? do |hash|
+			hash[:hidden] == false
+		end
+	end
 
   def try(letter)
     found = false
@@ -35,4 +36,6 @@ class Word
       end
       return output.join
     end
+  end
+end
 end
