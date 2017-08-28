@@ -48,3 +48,4 @@ class Pokemon
     return "The current pokemon is #{@current_word.render}\n You have #{total_guesses} left."
   end
 end
+end
